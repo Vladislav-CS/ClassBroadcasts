@@ -29,7 +29,7 @@ type ClassBroadcasts() =
 
     override this.Version = Version(1, 0, 0)
 
-    override this.Version = Version(8, 0, 0)
+    override this.RequiredExiledVersion = Version(8, 0, 0)
 
     override this.OnEnabled() = (
             Exiled.Events.Handlers.Player.Spawned.Subscribe(fun ev -> this.OnSpawned(ev))
