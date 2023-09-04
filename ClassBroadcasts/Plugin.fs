@@ -1,5 +1,6 @@
 ﻿namespace ClassBroadcasts
 
+open System
 open System.Collections.Generic
 open Exiled.API.Features
 open Exiled.Events.EventArgs.Player
@@ -25,6 +26,10 @@ type ClassBroadcasts() =
     override this.Name = "ClassBroadcasts"
 
     override this.Prefix = this.Name
+
+    override this.Version = Version(1, 0, 0)
+
+    override this.Version = Version(8, 0, 0)
 
     override this.OnEnabled() = (
             Exiled.Events.Handlers.Player.Spawned.Subscribe(fun ev -> this.OnSpawned(ev))
