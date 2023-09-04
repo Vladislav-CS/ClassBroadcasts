@@ -32,6 +32,8 @@
         <DefineConstants>TRACE</DefineConstants>
         <WarningLevel>3</WarningLevel>
         <OtherFlags>--warnon:1182</OtherFlags>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <PlatformTarget>x64</PlatformTarget>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
